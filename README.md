@@ -4,7 +4,8 @@ Author: Klára Ilyés
 Tools: MySQL, MySQL Workbench
 Skills demonstrated: Data cleaning, data validation, SQL analysis, data quality checks
 
-📌 Project Overview
+
+**📌 Project Overview**
 
 This project focuses on cleaning and analyzing a messy e-commerce sales dataset using SQL.
 
@@ -19,7 +20,8 @@ performing exploratory data analysis
 
 The final cleaned dataset was then used to generate basic business insights.
 
-📂 Dataset
+
+**📂 Dataset**
 
 The dataset contains simulated e-commerce sales transactions with the following fields:
 
@@ -43,17 +45,20 @@ missing and incorrect category labels
 duplicate rows
 negative values in quantity and price
 
-🧹 Data Cleaning Process
+
+**🧹 Data Cleaning Process**
 
 The following steps were performed using SQL in MySQL Workbench:
 
-1️⃣ Initial Data Inspection
+
+**1️⃣ Initial Data Inspection**
 
 Reviewed table structure using DESCRIBE
 Examined raw data samples using SELECT
 Identified problematic columns and inconsistent formats
 
-2️⃣ Column Standardization
+
+**2️⃣ Column Standardization**
 
 Column names were standardized to follow a consistent naming convention:
 
@@ -64,11 +69,13 @@ ID → customer_id
 Order_ID → order_id
 Order_Date → order_date
 
-3️⃣ Removing Redundant Columns
+
+**3️⃣ Removing Redundant Columns**
 
 The Customer_Name column contained duplicated information derived from customer_id and was removed.
 
-4️⃣ Cleaning Date Formats
+
+**4️⃣ Cleaning Date Formats**
 
 The dataset contained inconsistent date formats such as:
 
@@ -78,7 +85,8 @@ Jan 5 2023
 
 Dates were standardized and converted to a proper DATE data type.
 
-5️⃣ Cleaning Numeric Columns
+
+**5️⃣ Cleaning Numeric Columns**
 
 The price column contained invalid values such as:
 
@@ -99,13 +107,15 @@ SELECT *
 FROM sales_data
 WHERE price NOT REGEXP '^-?[0-9]*\.?[0-9]+$';
 
-6️⃣ Recalculating Totals
+
+**6️⃣ Recalculating Totals**
 
 To ensure accuracy, the total column was recalculated:
 
 total = quantity * price
 
-7️⃣ Fixing Negative Values
+
+**7️⃣ Fixing Negative Values**
 
 Negative values were corrected using:
 
@@ -117,7 +127,8 @@ quantity
 price
 total
 
-8️⃣ Standardizing Product Categories
+
+**8️⃣ Standardizing Product Categories**
 
 Some rows contained missing or incorrect categories.
 
@@ -131,7 +142,8 @@ Books
 Home
 Sports
 
-9️⃣ Duplicate Detection
+
+**9️⃣ Duplicate Detection**
 
 Potential duplicate transactions were identified using:
 
@@ -140,7 +152,8 @@ FROM sales_data
 GROUP BY customer_id, order_id
 HAVING COUNT(*) > 1;
 
-📊 Exploratory Data Analysis
+
+**📊 Exploratory Data Analysis**
 
 After cleaning the dataset, several SQL queries were used to generate insights.
 
@@ -167,7 +180,8 @@ SUM(total)
 FROM sales_data
 GROUP BY YEAR(order_date), MONTH(order_date);
 
-📈 Key Skills Demonstrated
+
+**📈 Key Skills Demonstrated**
 
 This project demonstrates practical SQL skills commonly required for data analyst roles:
 
@@ -179,13 +193,15 @@ Removing duplicates
 Data quality checks
 Exploratory data analysis
 
-🧠 What I Learned
+
+**🧠 What I Learned**
 
 Through this project I practiced handling messy datasets and learned how to systematically approach data cleaning tasks using SQL.
 
 It reinforced the importance of validating data, standardizing formats, and ensuring numerical accuracy before performing analysis.
 
-🚀 Future Improvements
+
+**🚀 Future Improvements**
 
 Possible extensions for this project:
 
@@ -194,7 +210,8 @@ creating sales trend visualizations
 customer segmentation analysis
 cohort analysis
 
-📬 Contact
+
+**📬 Contact**
 
 If you'd like to connect or discuss data analytics projects:
 
