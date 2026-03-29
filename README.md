@@ -3,10 +3,10 @@ This project focuses on cleaning and analyzing an e-commerce sales dataset using
 
 Steps performed
 
-Data inspection
-Fixing column names
-Cleaning inconsistent values
-Handling invalid numeric values
-Recalculating totals
-Removing duplicates
-Exploratory data analysis using SQL
+• Data inspection
+• Fixing column names
+• Cleaning inconsistent values
+• Handling invalid numeric values
+• Recalculating totals
+• Removing duplicates
+• Exploratory data analysis using SQL
