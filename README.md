@@ -1,4 +1,4 @@
-🛒 E-Commerce Sales Data Cleaning & Analysis (SQL)
+**🛒 E-Commerce Sales Data Cleaning & Analysis (SQL)**
 
 Author: Klára Ilyés
 Tools: MySQL, MySQL Workbench
