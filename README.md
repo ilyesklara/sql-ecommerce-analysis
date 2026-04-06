@@ -216,4 +216,4 @@ cohort analysis
 If you'd like to connect or discuss data analytics projects:
 
 LinkedIn: www.linkedin.com/in/klára-ilyés-398402317
-Email: demeterklara88@gmail.comm
+Email: demeterklara88@gmail.com
